@@ -1,5 +1,6 @@
 //la classe del burger non apre il burger ma lo apre la <a> padre perciò devo selezionarlo
 const openMenu = document.querySelector("div.header-right i");
+
 // seleziono l'elemento corretto usato console per comprendere l'elemento selezionato
 console.log(openMenu);
 
@@ -23,3 +24,19 @@ closeMenu.addEventListener('click',
         openBurger.style.display = "none";
     }
     );
+
+    //Il professore utilizza add e remove
+    // const burgerButton = document.querySelector('.header-right > a');
+    //burgerButton.addEventListener('click',
+    // function(){
+    //     const hamburgerMenu = document.querySelector('.hamburger-menu');
+    //     hamburgerMenu.classList.add('active')
+    // }
+    // );
+    //const closeButton = document.querySelector('.close');
+    //burgerButton.addEventListener('click',
+    // function(){
+    //     const hamburgerMenu = document.querySelector('.hamburger-menu');
+    //     hamburgerMenu.classList.remove('active')
+    // }
+    // );
