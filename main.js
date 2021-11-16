@@ -1,3 +1,22 @@
+// Il professore utilizza add e remove
+const burgerButton = document.querySelector('.header-right > a');
+// aggiunto div e utilizzato console.log ma al click non aggiunge la classe active al div selezionato
+console.log(burgerButton);
+burgerButton.addEventListener('click',
+function() {
+    const hamburgerMenu = document.querySelector('.hamburger-menu');
+    
+    hamburgerMenu.classList.add('active');
+    console.log(hamburgerMenu.classList);
+}
+);
+const closeButton = document.querySelector('.close');
+closeButton.addEventListener('click',
+function() {
+    const hamburgerMenu = document.querySelector('.hamburger-menu');
+    hamburgerMenu.classList.remove('active');
+}
+);
 //la classe del burger non apre il burger ma lo apre la <a> padre perciò devo selezionarlo
 // const openMenu = document.querySelector("div.header-right i");
 
@@ -24,23 +43,14 @@
 //         openBurger.style.display = "none";
 //     }
 //     );
+// const hamburger = document.querySelector(".header-right > a");
+// const navMenu = document.querySelector(".hamburger-menu");
+// const navClose = document.querySelector(".hamburger-menu .close")
 
-    // Il professore utilizza add e remove
-const burgerButton = document.querySelector('div.header-right > a');
-// aggiunto div e utilizzato console.log ma al click non aggiunge la classe active al div selezionato
-console.log(burgerButton);
-burgerButton.addEventListener('click',
-function() {
-    const hamburgerMenu = document.querySelector('.hamburger-menu');
+// hamburger.addEventListener("click", function() {
+//     navMenu.classList.add("active");
+// });
 
-    hamburgerMenu.classList.add('active');
-
-}
-);
-const closeButton = document.querySelector('.close');
-burgerButton.addEventListener('click',
-function() {
-    const hamburgerMenu = document.querySelector('.hamburger-menu');
-    hamburgerMenu.classList.remove('active');
-}
-);
+// navClose.addEventListener("click", function() {
+//     navMenu.classList.remove("active");
+// });
