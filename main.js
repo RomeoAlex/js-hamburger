@@ -26,19 +26,21 @@
 //     );
 
     // Il professore utilizza add e remove
-    const burgerButton = document.querySelector('.header-right > a');
-    console.log(burgerButton);
-    burgerButton.addEventListener('click',
-    function() {
-        const hamburgerMenu = document.querySelector('.hamburger-menu');
-        console.log(hamburgerMenu);
-        hamburgerMenu.classList.add('active')
-    }
-    );
-    const closeButton = document.querySelector('.close');
-    burgerButton.addEventListener('click',
-    function() {
-        const hamburgerMenu = document.querySelector('.hamburger-menu');
-        hamburgerMenu.classList.remove('active')
-    }
-    );
+const burgerButton = document.querySelector('div.header-right > a');
+// aggiunto div e utilizzato console.log ma al click non aggiunge la classe active al div selezionato
+console.log(burgerButton);
+burgerButton.addEventListener('click',
+function() {
+    const hamburgerMenu = document.querySelector('.hamburger-menu');
+
+    hamburgerMenu.classList.add('active');
+
+}
+);
+const closeButton = document.querySelector('.close');
+burgerButton.addEventListener('click',
+function() {
+    const hamburgerMenu = document.querySelector('.hamburger-menu');
+    hamburgerMenu.classList.remove('active');
+}
+);
